@@ -6,6 +6,7 @@
         /* # Expose public functions */
         /* #=============================================================================== */
         this.populate = function(input) { _this.populate(input); };
+        this.repopulate = function (input) { _this.repopulate(input); };
         this.set_values = function(values) { _this.set_values(values); };
         this.get_values = function() { return _this.get_values(); };
         return this.each(function(){
@@ -65,6 +66,12 @@
                 }
                 _this.update_lists(true);
             };
+
+            _this.repopulate = function (input) {
+                _this._remaining_list = [];
+                _this._target_list = [];
+                _this.populate(input);
+            };
             _this.set_values = function(values) {
                 _this.move_elems(values, false, true);
             };
@@ -104,7 +111,7 @@
                             if (!force_hilite_off && settings.hilite_selection && !old[i].hasOwnProperty(e[0].value)) {
                                 selected = 'selected="selected"';
                             }
-                            source[i].append('<option ' + selected + 'value=' + e[0].value + '>' + e[0].content + '</option>');
+                            source[i].append('<option ' + selected + 'value=' + e[0].value + ' title="' + e[0].content + '">' + e[0].content + '</option>');
                         }
                     }
                 }
