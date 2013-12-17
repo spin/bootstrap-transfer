@@ -153,7 +153,7 @@
                 <tr>\
                     <td width="50%">\
                         <div class="selector-available">\
-                            <h2>Available</h2>\
+                            <div class="selector_title">Available</div>\
                             <div class="selector-filter">\
                                 <table width="100%" border="0">\
                                     <tr>\
@@ -170,24 +170,24 @@
                             </div>\
                             <select multiple="multiple" class="filtered remaining">\
                             </select>\
-                            <a href="#" class="selector-chooseall">Choose all</a>\
+                            <a class="selector-chooseall">Choose all</a>\
                         </div>\
                     </td>\
                     <td>\
                         <div class="selector-chooser">\
-                            <a href="#" class="selector-add">add</a>\
-                            <a href="#" class="selector-remove">rem</a>\
+                            <a class="selector-add">add</a>\
+                            <a class="selector-remove">rem</a>\
                         </div>\
                     </td>\
                     <td width="50%">\
                         <div class="selector-chosen">\
-                            <h2>Chosen</h2>\
+                            <div class="selector_title">Chosen</div>\
                             <div class="selector-filter right">\
                                 <p>Select then click</p><span class="illustration"></span>\
                             </div>\
                             <select multiple="multiple" class="filtered target">\
                             </select>\
-                            <a href="#" class="selector-clearall">Clear all</a>\
+                            <a class="selector-clearall">Clear all</a>\
                         </div>\
                     </td>\
                 </tr>\
